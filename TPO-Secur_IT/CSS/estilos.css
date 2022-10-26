@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ---------------------- Formato del Carrusel --------------------- */
+#conteItemsCarrusel{
+    height: 400px ;
+    overflow: hidden;
+}
+#conteItemsCarrusel a{
+    text-decoration:none ;
+    font-style: none;
+    color: white;
+    font-size: 30px;
+}
+#conteItemsCarrusel img{
+    height: 100%;
+    width: 100%;
+}
+#contePuntos{
+    display: flex;
+    justify-content: space-around;
+}
+#contePuntos a{
+    text-decoration:none ;
+}
+#tarjetaCarrusel-1{
+    background-color: rgb(182, 182, 231);
+}
+#tarjetaCarrusel-2{
+    background-color: rgb(90, 90, 236);
+}
+#tarjetaCarrusel-3{
+    background-color: rgb(128, 238, 113);
+}
+
+.itemCarrusel{
+    height: 100%;
+    position: relative;
+}
+
+.tarjetacarrusel{
+    background-color: aqua;
+    height: 100%;
+}
+
+.flechascarrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+/* -------------------------------- Fin de Formato Carrusel ----------------------- */
+
+.contenedor .header {
+    background-color: #03102c;
+    color: beige;
+    margin:0;
+    padding: 0;
+    height: auto;
+}
+
+.contenedor .header h5{
+    padding-top: 5px;
+    margin: 5px;
+}
+
+.contenedor .header .nav{
+    background-color: #088f88;
+    padding: 8px;
+    font-size: 1.5vw;
+    display: block;
+    text-align: left;
+    
+}
+.contenedor .header .nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'barlow', sans-serif;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.contenedor .header .nav :hover{
+    background-color: #f5f5dc;
+    color: #03102c;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+
+.inline{
+    display:inline-block
+}
+
+.footer{
+    font-size: 12px;
+    background-color: #03102c;
+    font-family: 'Raleway', sans-serif;
+    color: #f5f5dc;
+    width: 100%;
+    padding: 40px;
+    height: 30px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+
+.contenedor .header h1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.contenedor .header h4{
+    font-family: 'Barlow', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contenedor .noticias {
+    padding: 10px;
+    width: 623px ;
+}
+
+.fa-instagram, .fa-square-twitter, .fa-square-facebook, .fa-square-pinterest,.fa-linkedin
+{    text-decoration: none;
+    color: #f5f5dc;
+    font-size: 1.5vw;
+}
+
+.noticias img{
+    height: 120px;
+    width: 180px;
+}
+.noticias #noticia1, #noticia2, #noticia3, #noticia4, #noticia5 {
+    padding-bottom: 10px;
+}
+
+
+
+/********* INICIO Estilos pagina Formulario (contacto.html) ********/
+
+.texto1{
+    font-size: 30px;
+    padding: 0.5vw;
+    text-align: center;
+}
+.texto2{
+    padding: 0.5vw;
+    font-size: 20px;
+    text-align: center;
+}
+.form{
+    border-radius: 7.5px;
+    background-color: #a4cfcf;
+    padding: 5%;
+    margin: 5%;
+    width: 90%;
+ 
+}
+.section{
+    background: rgb(255, 255, 255);
+    display: flex;
+}
+.susc1{
+    margin: 20px 0px 0px;
+    padding: 10px;
+}
+.susc2{
+    margin: 0px;
+    padding: 10px;
+}
+.caja{
+    display: flex;
+    margin: auto;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formulario__label {
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: sticky;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 4px;
+    box-sizing: border-box;
+	height: 30px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	visibility: hidden;
+}
+
+.formulario__input-error-activo {
+	visibility: visible;
+}
+
+.formulario__validacion-estado {
+  /*  position: absolute;*/
+	right: 10px;
+	bottom: 0px;
+	z-index: 1000;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.formulario__grupo-checkbox, .formulario__grupo-radio,
+.formulario__mensaje {
+	grid-column: span 2;
+    text-align: center;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 20px;
+	background: #F66060;
+	border-radius: 3px;
+	visibility: hidden;
+}
+
+.formulario__mensaje-activo {
+	visibility: visible;
+}
+
+.formulario__mensaje-exito {
+	font-size: 16px;
+	color: #000000;
+    padding-top: 10px;
+    height: 45px;
+    border-radius: 3px;
+    background: #2cc777;
+    visibility: hidden;
+    text-align: center;
+}
+
+.formulario__mensaje-exito-activo {
+	visibility: visible;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: #088f88;
+    color: white;
+    padding: 10px 20px;
+    margin: 1vw 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=text], input[type=email], input[type=tel]{
+    margin: 15px 0px;
+}
+textarea{
+    width:100%;
+}
+
+@media only screen and (min-width: 600px) 
+{
+    .section{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contenedor-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .suscripcion {
+        flex-basis: calc(40% - 1rem);
+    }
+    .formulario {
+        flex-basis: calc(60% - 1rem);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .contenedor-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .suscripcion {
+        flex-basis: calc(50% - 1rem);
+    }
+    .formulario {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .contenedor-flex {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .suscripcion {
+        flex-basis: calc(60% - 1rem);
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario {
+        flex-basis: calc(40% - 1rem);
+
+    }
+}
+
+/********* FIN Estilos pagina Formulario (contacto.html) ********/
+
+
+/********* INICIO Estilos pagina Politica (politica.html) ********/
+
+.formato_main{
+    margin: 0px 20px;
+}
+
+.titulo_politica{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.subtitulo{
+    font-size: 20px;
+    margin: 15px 0px 10px 20px;
+}
+
+.formato_texto{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.lista {
+    list-style: square inside;
+}
+
+/********* FIN Estilos pagina Politica (politica.html) ********/
+
+/********* INICIO Estilos pagina SUSCRIPTORES (suscriptores.html) ********/
+
+.contenedor_central {
+    width: 95%;
+    margin: 30px 20px;
+    text-align: center;
+    height: 800px;
+
+}
+
+.entrada-blog a {
+    display: inline-block;
+    text-align: center;
+}
+
+@media only screen and (min-width:1200px) {
+    .tres-columnas {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .entrada-blog {
+        flex-basis: calc(33.3% - 1rem);
+        /*calc() hace un cálculo matemático*/
+        /*Ocupa el 33% del contenedor - 1 rem para dar espacio entre columnas*/
+    }
+}
+@media only screen and (min-width:800px) {
+    .tres-columnas {
+        display: flex;
+    }
+    .entrada-blog {
+        flex-direction: column;
+    }
+    @media only screen and (min-width:320px) {
+        .tres-columnas {
+            display: flex;
+        }
+        .entrada-blog {
+            flex-direction: column;
+        }
+}
+
+
+/********* FIN Estilos pagina SUSCRIPTORES (suscriptores.html) ********/
+
+/********* INICIO Estilos pagina CONOCENOS (conocenos.html) ********/
+.puesto {
+    font-family: 'Arial';
+    font-size: 25px;
+    color:#707c96
+}
+.miembro {
+    font-family: 'Arial';
+    font-size: 30px;
+    padding: 20px;
+    color:#03102c;
+}
+.conocenos{
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.miembroHijo{
+    background-color: #ece9e9;
+    border: 2px solid #03102c;
+    width: 250px;
+    height: 400px;
+    color: #03102c;
+    margin: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+/********* FIN Estilos pagina CONOCENOS (conocenos.html) ********/
+
+/********* INICIO Estilos pagina RECURSOS (recursos.html) ********/
+.descripcionRecurso {
+    font-family: 'Arial';
+    font-size: 10px;
+    color:#707c96
+}
+.tituloRecurso {
+    font-family: 'Arial';
+    font-size: 15px;
+    padding: 5px;
+    color:#03102c;
+}  
+.recursos{
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recursoHijo{
+    border: 2px solid #03102c;
+    width: 250px;
+    height: 200px;
+    color: #03102c;
+    margin: 30px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+/********* FIN Estilos pagina RECURSOS (recursos.html) ********/

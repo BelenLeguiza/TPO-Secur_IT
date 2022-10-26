@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción y Contacto</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="https://kit.fontawesome.com/4fa4a741e8.js" crossorigin="anonymous"></script>
+    <meta nombre  ="msapplication-TileColor"  content= "#ffffff" > 
+    <meta  nombre= "msapplication-TileImage"  content= "/ms-icon-144x144.png" > 
+    <meta name  = "tema-color"  content= "#ffffff" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+          <a href="index.html"><img src="IMG/Logo.png" alt="Logo" width="65px" ></a>
+            <H1 class="inline">Secur_IT</H1>
+            <h4>Noticias y análisis de Seguridad Informatica</h4>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="conocenos.html">Quiénes Somos</a>
+                <a href="recursos.html">Recursos</a>
+                <a href="contacto.html">Suscripción y Contacto</a>
+                <a href="suscriptores.html">Suscriptores Ganadores</a>
+            </nav>
+        </header>
+        <!-- INICIO MAQUETADO CENTRAL -->
+        <div class="contenedor-flex">
+            <main class="suscripcion">
+                <article class="susc1">
+                   <h1 class="texto1">SUSCRIPCIÓN DE NOTICIAS </h1>
+                   <p class="texto2">No te pierdas ninguna noticia relevante de seguridad informática suscribiéndote a nuestro boletín informativo diario. 
+                </article>
+                <article class="susc2">
+                    <p class="texto2">Los datos proporcionados en este formulario se conservarán mientras no solicite su baja de la lista de distribución y no se cederán a terceros.</p>
+                </article class="susc2">
+                    <p class="texto2">Puede encontrar información relativa a nuestra <a href="politica.html">Política de Privacidad.</a></p> <br>
+                </article>
+                <article class="susc2">
+                    <div class="caja">
+                        <h3 class="texto2">¿En qué podemos ayudarte?</h3><br>
+                            <table align="center" border="1">
+                                <tr align="center"  bgcolor="lightgrey">
+                                    <th>  Puedes contactar con nosotros a través de estos canales  </th>
+                                </tr>
+                                <tr align="center">
+                                    <td><i class="fa-solid fa-house-laptop"></i> Av. Gral. Paz 500 - San Miguel de Tucumán</td>
+                                </tr>
+                                <tr align="center">
+                                    <td><i class="fa-solid fa-envelope"></i><a href="mailto:info@securit.com"> mail@mail.com</a></td>
+                                </tr>
+                                <tr align="center">
+                                    <td><i class="fa-solid fa-phone"></i> 0800 555 1234</td>
+                                </tr>                           
+                            </table> <br><br>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.109221265127!2d-65.20812448550801!3d-26.836478183160423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0ee27797a5%3A0xdcd83f8cf19c9afd!2sGral.%20Paz%20500%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1666696899777!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>             
+                </article>
+            </main>
+            <aside class="formulario section">
+                <form action="#" class="form" id="formulario">
+                    <p class="texto2">Completa tus datos y en breve nos pondremos en contacto contigo</p> <br>
+                    <!-- Nombre -->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label class="formulario__label" for="nombre">Nombre:(*)</label> 
+                        <div class="formulario__grupo-input">
+                          <input class="formulario__input" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre...">
+                        </div> 
+                    </div>
+                    <!-- Apellido -->
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label class="formulario__label" for="apellido">Apellido:(*)</label>  
+                        <div class="formulario__grupo-input">
+                          <input class="formulario__input" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido...">
+                        </div>
+                    </div>
+                    <!-- Correo Electronico -->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label class="formulario__label" for="correo">Email:(*)</label>  
+                        <div class="formulario__grupo-input">
+                          <input class="formulario__input" type="email" name="correo" id="correo" placeholder="Ingrese su correo electrónico...">
+                        </div>
+                    </div>
+                    <!-- Teléfono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label class="formulario__label" for="telefono">Teléfono:(*)</label>  
+                        <div class="formulario__grupo-input">
+                          <input class="formulario__input" type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono...">
+                        </div> 
+                    <!-- Género -->
+                    </div>
+                    <div class="formulario__grupo-radio">
+                        <p class="formulario__label">Género:
+                            <input type="radio" name="genero" value="hombre" checked>Hombre
+                            <input type="radio" name="genero" value="mujer" checked>Mujer
+                            <input type="radio" name="genero" value="otro" checked>Otro 
+                        </p>
+                    </div><br>
+                    <!-- Temas de interés -->
+                    <div formulario__grupo-checkbox>
+                        <p class="formulario__label">Temas de seguridad que te interesen: </p> 
+                        <input class="formulario__checkbox" type="checkbox" name="tema" id="tema" value="html">Ataques de pishing    
+                        <input class="formulario__checkbox" type="checkbox" name="tema" id="tema" value="css">Contraseñas y autenticación
+                        <input class="formulario__checkbox" class="formulario__checkbox" type="checkbox" name="tema" id="tema" value="bootstrap">Seguridad de los dispositivos móviles
+                        <input class="formulario__checkbox" type="checkbox" name="tema" id="tema" value="javascript">Uso de redes sociales
+                        <input class="formulario__checkbox" type="checkbox" name="tema" id="tema" value="typescript">Tendencias y nuevos Cyberataques      
+                    </div> <br>
+                    <!-- Caja de comentarios -->
+                    <p class="formulario__label">Comentarios</p>
+                    <textarea cols="30" rows="5" placeholder="Escriba su comentario..."></textarea> 
+                    <!-- Terminos y Condiciones -->
+			        <div class="formulario__grupo-checkbox" id="grupo__terminos">
+                      <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">Acepto los Terminos y Condiciones (*)
+                      </label>	 
+			        </div> <br>
+                    <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <i class="fas fa-exclamation-triangle"></i> <span>Campos obligatorios (*) no completados.</span>
+                        <p>O el formato del campo no es válido.</p>
+                    </div>
+                    <!-- ENVIAR -->
+                    <input class="formulario__btn" type="submit" value="Enviar">
+                    <!-- MENSAJE ENVIO EXITOSO -->
+		        	<div class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+				        <p class="formulario__label">Formulario enviado exitosamente!</p>
+			        </div>
+                </form>
+            </aside>
+        </div>         
+        <!-- FIN MAQUETADO CENTRAL -->
+        <footer class="footer">
+            <a href="http://www.instagram.com" alt="página instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://www.twitter.com" alt="página twitter" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="http://www.linkedin.com" alt="página linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="http://www.facebook.com" alt="página facebook" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="http://www.pinterest.com" alt="página pinterest" target="_blank"><i class="fa-brands fa-square-pinterest"></i></a>
+            <p>Derechos Reservados ©2022</p>
+        </footer>
+        <script src="js/form.js"></script>
+    </div>
+</body>
+</html>
